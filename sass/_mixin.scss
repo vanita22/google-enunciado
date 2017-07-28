@@ -1,0 +1,78 @@
+@mixin color_titulo(){
+	@if max-width == 768px{
+		color:$color_a;
+		font-weight: bold;
+	}@else{
+		color:$color_e;
+		font-weight: bold;
+	}
+}
+
+@mixin color_fecha(){
+	@if max-width == 768px{
+		color:$color_b;
+		font-weight: bold;
+	}@else{
+		color:$color_f;
+		font-weight: bold;
+	}
+}
+
+@mixin color_texto(){
+	@if max-width == 768px{
+		color:$color_c;
+		font-weight: bold;
+	}@else{
+		color:$color_g;
+		font-weight: bold;
+	}
+}
+
+@mixin color_otro(){
+	@if max-width == 768px{
+		color:$color_h;
+		font-weight: bold;
+	}@else{
+		color:$color_d;
+		font-weight: bold;
+	}
+}
+
+@mixin color_menu(){
+	@if max-width == 768px{
+		color:$color_h;
+		font-weight: bold;
+	}@else{
+		color:$color_g;
+		font-weight: bold;
+	}
+}
+
+@mixin color_box(){
+	@if max-width == 768px{
+		background-color: $color_j;
+	}@else{
+		background-color: $color_i;
+	}
+}
+
+@mixin color_boxa(){
+	@if max-width == 768px{
+		background-color: $color_j;
+	}@else{
+		background-color: $color_k;
+	}
+}
+
+@mixin font_fa(){
+	@if max-width == 768px{
+		font-family: $font_family_a;
+	}@else{
+		font-family: $font_family_b;
+	}
+}
+
+
+
+
+

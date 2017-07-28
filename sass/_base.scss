@@ -1,0 +1,196 @@
+body{
+	font-family: $font_family_a;
+}
+
+@media (max-width: 768px){
+	body{
+		@include font_fa();		
+	}		
+}
+
+.linea{
+	border-bottom: 2px solid $color_d;
+}
+
+.linea2{
+	border-bottom: 2px solid $color_i;
+}
+
+.navbar{
+	img{
+		margin-top:10px;
+	}	
+}
+
+.collapse{
+	li{
+		margin-left: 100px;
+		a{
+			color:$color_g;
+			font-weight: bold;
+		}
+	}
+}
+
+@media (max-width: 768px){
+	.collapse{
+		li a{
+			@include color_menu();
+		}
+	}		
+}
+
+.box{
+	padding: 20px;
+	margin-top: 75px;
+		h1{
+			color:$color_a;
+			font-weight: bold;
+		}
+		p{
+			color:$color_c;
+			font-weight: bold;
+		}
+		h3{
+			color:$color_b;
+			font-weight: bold;
+		}		
+}
+
+@media (max-width: 768px){
+	.box{
+		h1{
+			@include color_titulo();
+		}
+		p{
+			@include color_texto();
+		}
+	}
+}
+
+.box2{
+	padding: 20px;	
+	h2{
+		color:$color_a;
+		font-weight: bold;
+	}
+	h4{
+		color:$color_b;
+		font-weight: bold;
+	}
+	p{
+		color:$color_c;
+		font-weight: bold;
+	}
+	h5{
+		text-align: right;
+		color:$color_d;
+		font-weight: bold;
+	}
+	.caja{
+		display: inline-flex;
+		background-color: $color_i;
+		width: 100%;
+		padding: 15px;
+		img{
+			margin-left: 40%;
+		}
+	}
+}
+@media (max-width: 768px){
+	.box2{
+		@include color_box();
+		h2{
+			@include color_titulo();
+		}
+		h4{
+			@include color_fecha();
+		}
+		p{
+			@include color_texto();
+		}
+		h5{
+			@include color_otro();
+		}
+	}
+}
+
+.box3{
+	padding: 20px;
+	margin-left: 10%;
+	h2{
+		color:$color_a;
+		font-weight: bold;
+	}
+	p{
+		color:$color_c;
+		font-weight: bold;
+	}
+	img{
+		width: 80%;
+	}
+	h5 img{
+		display: inline-flex;
+		width: 5%;
+	}	
+}
+
+@media (max-width: 768px){
+	.box3{
+		@include color_boxa();		
+		margin-left: -5%;
+		img{
+			width: 100%;
+		}
+		h2{
+			@include color_titulo();
+		}
+		p{
+			@include color_texto();
+		}
+	}
+}
+
+footer{
+	padding: 20px;
+	h5{
+		color:$color_a;
+		font-weight: bold;
+	}
+	p{
+		margin-right: 20px;
+		color:$color_c;
+		font-weight: bold;
+	}
+	.caja-c{
+		display: inline-flex;
+		p{
+			margin-right: 20px;
+			color:$color_c;
+			font-weight: bold;
+		}
+	}
+	.caja-d{
+		padding: 20px;
+		img{
+			width: 40px;
+			height: 40px;
+			float: left;
+		}		
+		p{
+			float: right;
+			color:$color_c;
+			font-weight: bold;
+		}
+	}
+}
+@media (max-width: 768px){
+	footer{
+		h5{
+			@include color_titulo();
+		}
+		p{
+			@include color_texto();
+		}
+	}
+}
